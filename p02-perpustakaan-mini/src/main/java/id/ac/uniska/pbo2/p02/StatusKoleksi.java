@@ -1,0 +1,15 @@
+package id.ac.uniska.pbo2.p02;
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Enum.java to edit this template
+ */
+
+/**
+ *
+ * @author acer
+ */
+public enum StatusKoleksi {
+    TERSEDIA,
+    DIPINJAM
+}
