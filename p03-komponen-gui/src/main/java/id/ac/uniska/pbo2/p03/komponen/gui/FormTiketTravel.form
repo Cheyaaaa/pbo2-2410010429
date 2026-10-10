@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="kelasGroup">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="3"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lbNama" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbHp" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbKota" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbKelas" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="TfHp" pref="185" max="32767" attributes="0"/>
+                                      <Component id="TfNama" max="32767" attributes="0"/>
+                                      <Component id="Kota" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="RbEkonomi" max="32767" attributes="0"/>
+                                          <Component id="RbEksekutif" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="RbBisnis" alignment="1" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lbFasilitas" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbCatatan" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="CbBagasi" min="-2" pref="85" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="CbMakanan" min="-2" pref="85" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="CbAsuransi" min="-2" pref="85" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jScrollPane1" min="-2" pref="258" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="138" max="-2" attributes="0"/>
+                      <Component id="BtnPesan" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                      <Component id="TgGelap" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="20" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lbNama" min="-2" max="-2" attributes="0"/>
+                  <Component id="TfNama" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lbHp" min="-2" max="-2" attributes="0"/>
+                  <Component id="TfHp" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lbKota" min="-2" max="-2" attributes="0"/>
+                  <Component id="Kota" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lbKelas" min="-2" max="-2" attributes="0"/>
+                  <Component id="RbEkonomi" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="RbBisnis" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="RbEksekutif" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lbFasilitas" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="CbBagasi" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="CbMakanan" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="CbAsuransi" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lbCatatan" min="-2" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="BtnPesan" min="-2" max="-2" attributes="0"/>
+                  <Component id="TgGelap" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="44" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lbNama">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nama"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbHp">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="No Hp"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbKota">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Kota Tujuan"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbKelas">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Kelas"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbFasilitas">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fasilitas Tambahan"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbCatatan">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Catatan"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="TfNama">
+    </Component>
+    <Component class="javax.swing.JTextField" name="TfHp">
+    </Component>
+    <Component class="javax.swing.JComboBox" name="Kota">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="5">
+            <StringItem index="0" value="Banjarbaru"/>
+            <StringItem index="1" value="Martapura"/>
+            <StringItem index="2" value="Balikpapan"/>
+            <StringItem index="3" value="Palngka Raya"/>
+            <StringItem index="4" value="Samarinda"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="RbEkonomi">
+      <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="kelasGroup"/>
+        </Property>
+        <Property name="selected" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="Ekonomi"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="RbBisnis">
+      <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="kelasGroup"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Bisnis"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="RbEksekutif">
+      <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="kelasGroup"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Eksekutif"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="CbBagasi">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Bagasi"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="CbMakanan">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Makanan"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="CbAsuransi">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Asuransi"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="Ta">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="BtnPesan">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Pesan"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnPesanActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="TgGelap">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Mode Gelap"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TgGelapActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
