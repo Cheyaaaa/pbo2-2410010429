@@ -4,6 +4,8 @@
  */
 package id.ac.uniska.pbo2.p04;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author acer
@@ -56,7 +58,7 @@ public FormAnggotaPerpustakaan() {
         hpField = new javax.swing.JTextField();
         alamatPanel = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        persetujuanCheckBox = new javax.swing.JCheckBox();
+        setujuCheck = new javax.swing.JCheckBox();
         jenisAnggotaPanel = new javax.swing.JPanel();
         mahasiswaRb = new javax.swing.JRadioButton();
         dosenRb = new javax.swing.JRadioButton();
@@ -68,6 +70,12 @@ public FormAnggotaPerpustakaan() {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("AnggotaPerpustakaan");
+        setEnabled(false);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
+            }
+        });
 
         headerPanel.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 16, 8, 16));
         headerPanel.setLayout(new javax.swing.BoxLayout(headerPanel, javax.swing.BoxLayout.Y_AXIS));
@@ -154,6 +162,11 @@ public FormAnggotaPerpustakaan() {
         formPanel.add(alamatLabel, gridBagConstraints);
 
         npmField.addActionListener(this::npmFieldActionPerformed);
+        npmField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                npmFieldKeyReleased(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 1;
@@ -203,14 +216,15 @@ public FormAnggotaPerpustakaan() {
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 8, 8);
         formPanel.add(alamatPanel, gridBagConstraints);
 
-        persetujuanCheckBox.setText("Setuju dengan tata tertib perpustakaan.");
-        persetujuanCheckBox.addActionListener(this::persetujuanCheckBoxActionPerformed);
+        setujuCheck.setText("Setuju dengan tata tertib perpustakaan.");
+        setujuCheck.addItemListener(this::setujuCheckItemStateChanged);
+        setujuCheck.addActionListener(this::setujuCheckActionPerformed);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 8, 8);
-        formPanel.add(persetujuanCheckBox, gridBagConstraints);
+        formPanel.add(setujuCheck, gridBagConstraints);
 
         jenisAnggotaPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
@@ -248,6 +262,7 @@ public FormAnggotaPerpustakaan() {
         tombolPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 8, 0));
 
         batalButton.setText("Batal");
+        batalButton.addActionListener(this::batalButtonActionPerformed);
         tombolPanel.add(batalButton);
 
         daftarButton.setText("Daftar");
@@ -288,13 +303,34 @@ public FormAnggotaPerpustakaan() {
         // TODO add your handling code here:
     }//GEN-LAST:event_npmFieldActionPerformed
 
-    private void persetujuanCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_persetujuanCheckBoxActionPerformed
+    private void setujuCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_setujuCheckActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_persetujuanCheckBoxActionPerformed
+    }//GEN-LAST:event_setujuCheckActionPerformed
 
     private void daftarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_daftarButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_daftarButtonActionPerformed
+
+    private void setujuCheckItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_setujuCheckItemStateChanged
+    daftarButton.setEnabled(setujuCheck.isSelected());        // TODO add your handling code here:
+    }//GEN-LAST:event_setujuCheckItemStateChanged
+
+    private void batalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_batalButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_batalButtonActionPerformed
+
+    private void npmFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_npmFieldKeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_npmFieldKeyReleased
+    // TODO add your handling code here:
+    // TODO add your handling code here:
+
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+       int jawab = JOptionPane.showConfirmDialog(this,
+ "Keluar dari aplikasi?", "Konfirmasi", JOptionPane.YES_NO_OPTION);
+ if (jawab == JOptionPane.YES_OPTION) {
+ dispose();}  // TODO add your handling code here:
+    }//GEN-LAST:event_formWindowClosing
 
     /**
      * @param args the command line arguments
@@ -347,9 +383,9 @@ public FormAnggotaPerpustakaan() {
     private javax.swing.JLabel nomorLabel;
     private javax.swing.JTextField npmField;
     private javax.swing.JLabel npmLabel;
-    private javax.swing.JCheckBox persetujuanCheckBox;
     private javax.swing.JLabel programStudiLabel;
     private javax.swing.JComboBox<String> progranStudiComboBox;
+    private javax.swing.JCheckBox setujuCheck;
     private javax.swing.JPanel tombolPanel;
     private javax.swing.JRadioButton umumRb;
     // End of variables declaration//GEN-END:variables
